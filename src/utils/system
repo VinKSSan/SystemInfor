@@ -1,0 +1,64 @@
+import si from 'systeminformation';
+
+//let intervalCount = 0;
+//const numberSeries = []
+//const numberTraks = []
+
+let systemInfo = {}
+
+export async function getSystemInfo() {
+
+  intervalCount++; // Incrementa a contagem de intervalos
+
+  const currentValue = numberSeries[numberSeries.length - 1]; // Obtém o último valor da série
+  const currentTime = new Date();
+  const isoTimeString = currentTime.toISOString()
+ // const hours = currentTime.getHours().toString().padStart(2, '0');
+ // const minutes = currentTime.getMinutes().toString().padStart(2 , '0');
+ // const seconds = currentTime.getSeconds().toString().padStart(2, '0');
+  const nextValue = isoTimeString; //`${hours}:${minutes}:${seconds}`;Calcula o próximo valor
+  numberSeries.push(nextValue);
+
+  //CPU	
+  const cpuData = await si.cpu();
+  const tempera= await si.cpuTemperature()
+  const velRealCPU = await si.cpuCurrentSpeed()    
+//serviços  
+
+  const threds = await si.processes()
+  const newtred = threds.all
+  numberTraks.push(newtred)  
+	
+  const loads = await si.currentLoad()
+  const service = await si.services()
+//memory
+  const dataDin= await si.getDynamicData() 
+  const memData = await si.mem();
+  const memMo = await si.memLayout()
+  const diskData = await si.diskLayout()
+  const tempoExcusão = numberSeries
+
+//wifi
+  const wifi = await  si.wifiNetworks()
+
+	
+  const systemInfo = {
+    Wifi : wifi,
+    traks: numberTraks,
+    times:tempoExcusão,
+    servi :[ service, loads, threds],
+    GeneralInforCPU: [cpuData, velRealCPU, tempera],
+    GeneralInforMEM:memData,
+    GeneralInforDISK:[diskData],
+    CoresProcessador: cpuData.cores,
+    VelocidadeProcessador: cpuData.speed,
+    VelocidadeMemoriaRAM: memData.total,
+    CapacidadeArmazenamento: diskData[0].size,
+  };
+
+  return systemInfo;
+}
+setInterval(async () => {
+  const info = await getSystemInfo();
+  console.log(info);
+}, 10000);
