@@ -10,9 +10,9 @@ let conta = 0
 
 
 const startSystemInfoUpdates = async () => {
-  return await new Promise( (resolve , reject) => {
+  return new Promise( (resolve , reject) => {
       try {
- 	      const time = si.time()         
+ 	      const time =  si.time()         
 	      const sysMãe=  si.system()	
 
         const cpuData = si.cpu();
