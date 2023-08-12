@@ -9,14 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@grafana/ui": "^10.0.1",
+    "@stitches/react": "^1.2.8",
     "axios": "^1.4.0",
     "concurrently": "^8.1.0",
+    "cors": "^2.8.5",
     "cross-env": "^7.0.3",
+    "d3": "^7.8.5",
     "express": "^4.18.2",
+    "file-loader": "^6.2.0",
+    "http-proxy-middleware": "^2.0.6",
     "next": "13.4.4",
+    "node-fetch": "^3.3.1",
+    "nodemailer": "^6.9.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-scroll": "^1.8.9",
     "systeminformation": "^5.18.3",
     "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "url-loader": "^4.1.1"
   }
 }

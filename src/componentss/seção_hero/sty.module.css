@@ -1,0 +1,27 @@
+.RAM {
+    margin-top: 5px;
+    background-image: url('../../../public/assets/RAMs.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25rem;
+   
+}
+
+.CPU {
+    background-image: url('../../../public/assets/CPUs.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%; 
+    justify-content: space-between;
+    height: 25rem;
+}
+
+.infor {
+    margin-top: 5px;
+    background-image: url('../../../public/assets/PosterBinData.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    
+}
