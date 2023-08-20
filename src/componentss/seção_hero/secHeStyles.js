@@ -9,7 +9,11 @@ export const SecHer  = styled('section', {
     backgroundImage: `url(${BackData})`,
     zIndex:10,
     borderBottom:"solid 2px lime",
-
+    ".pzinho":{
+        paddingTop:"2rem", 
+        borderTop:"solid 1px cyan"
+        
+    },
     ".infor":{
         backgroundColor:"rgba(0, 0 , 0 , 0.8)",
         width:"100%",
@@ -157,7 +161,23 @@ export const SecHer  = styled('section', {
         ".beneficios.ben2":{
             flexDirection: "column-reverse",
             marginBottom:"1rem !important"
-        }
+        },
+        
     },
+    "@tablet":{
+        ".divInfe":{
+            ".Imagem":{
+                width: "66% !important"
+            },
+            ".text":{
+                h3:{
+                    fontSize:"18px !important"
+                },
+                p:{
+                    lineHeight:"1.6rem !important"
+                }
+            }
+        }
+    }
     
 })

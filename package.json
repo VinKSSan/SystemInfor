@@ -26,6 +26,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scroll": "^1.8.9",
+    "send": "^0.18.0",
     "systeminformation": "^5.18.3",
     "url": "^0.11.0"
   },

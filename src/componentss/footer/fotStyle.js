@@ -321,10 +321,22 @@ export const FolStyle = styled('footer', {
                     color:"$whiteCyza",
                     cursor:'pointer',
                     "&:hover":{
-                        color:"cyan",
+                        color:"cyan !important",
                         padding:"0.1rem"
                     }
-                },       
+                }, 
+                button:{
+                    backgroundColor:"transparent" , 
+                    fontSize:"11px", 
+                    border:"none",
+                    color:"$whiteCyza",
+                    cursor:'pointer',
+                    "&:hover":{
+                        color:"cyan !important",
+                        padding:"0.1rem"
+                    } 
+                }
+                     
             }
 
         }

@@ -53,8 +53,8 @@ const SecHero = () =>{
                             </div>  
                         </div>
                     </div>
-                    <p>Os Nossos compudadores estão repletos de dados que nos dizem muito sobre a sua saude de maquina e seu desempenho operacional</p>
-                    <p>Os pricipais componetes computacionais que podemos monitorar analiticamente, de forma a obter alguma noção a cerca do desempenho de nossas maquinas, são; a Memoria de Acesso Aleatório(RAM) e a Unidade Central de Processamentos(CPU)</p>
+                    <p >Os Nossos compudadores estão repletos de dados que nos dizem muito sobre a sua saude de maquina e seu desempenho operacional</p>
+                    <p>Os principais componetes computacionais que podemos monitorar analiticamente, de forma a obter alguma noção a cerca do desempenho de nossas maquinas, são; a Memoria de Acesso Aleatório(RAM) e a Unidade Central de Processamentos(CPU)</p>
                 </div>
             </div>
             <div className="cardss">
@@ -73,10 +73,10 @@ const SecHero = () =>{
                     </div>
                     <div className={`card ${styles.CPU}`} >
                         <div className="divInfe">
-                            <div>
-                                <h3>A Memoria de Acesso Aleatório, armazena as todas as atividades em execução</h3>
-                                <p>todas as tarefas em execução são armazenadas na memória RAM. os pricipais dados que podemos obter dos modulos de memória RAM são, latência, frequência e quantidade.</p>
-                                <p> a latêcia , a frequência, a capacidade</p>
+                            <div className="text">
+                                <h3>A Unidade de Central de Processamentos, racionalizada cada dado enviado à RAM</h3>
+                                <p>As tarefas são executadas, na medida em que o processador lê e interpreta as instruções de cada tarefa,tal atividade chamamos:'processsamento', disto podemos monitorar:</p>
+                                <p> Load Avarage, Velocidade, temperatura</p>
                             </div>
                             <div className="Imagem">
                                 <Image width={200} height={180} src={CPU}/>

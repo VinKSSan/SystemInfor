@@ -62,7 +62,7 @@ const Sdata = ({data}) =>{
                     </div>
                     <div className="Task" >
                         <h1>Show de Tarefas</h1>
-                        <TabTaf data={sys}></TabTaf>
+                        <TabTaf data={sys}/>
                     </div>
                 </DataSty>
                 <div className="SwRa">           

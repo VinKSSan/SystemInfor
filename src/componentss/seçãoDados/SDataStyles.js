@@ -100,35 +100,47 @@ export const DataSty = styled("div" , {
    ".Task":{
         backgroundColor:"rgba(10 , 25 ,20 ,0.8)", 
         border: "solid 1px lime",
-        paddingBottom:"15rem",
         width: '100%',
-        maxWidth: '126.6rem',
-          
-        Height:'55rem',
-        padding:'2rem 0rem 1.5rem 2.5rem  ',
+        maxWidth: '90rem',     
+        height:'60rem',
+        padding:'2.5rem 1rem 2.5rem 2.5rem',
         h1:{
             fontSize: '2rem',
             marginBottom: '3rem',
             color: 'lime'
         },
         ".tab":{
-            table:{
+            
+            
+            width: "100%",
+            position:"relative",
+            borderBottom:"solid 2px lime",
+            
+                thead:{
+                    
+                    position: 'sticky',
+                    top: '0',
+                    backgroundColor:"rgba(0,20,55,0.9)",
+                    zIndex: 1
+                },
                 tr:{
                     border: "solid 2px lime",
-                    th:{
-                        color: 'green',
-                        fontSize: '1.4rem',
-                        border: "solid 2px lime",
-                    },
+                    maxWidth:"120rem",
                     td:{
                         border: "solid 2px lime",
                         textAlign:'center',
-                        color: 'lime'
-                    }
+                        color: 'lime',
+                        maxWidth:"11%"
+                    },
+                    th:{
+                        padding:"0.2rem",
+                        color: 'lime',
+                        fontSize: '1.4rem',
+                        border: "solid 2px lime",       
+                    },
                 }
-            }
-        },
-   }, 
+            
+        }},
     
     ".cpu" : {
          border: 'solid 1px lime',

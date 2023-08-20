@@ -61,6 +61,7 @@ function Home({systema}) {
           <GrafaSec data={dados.systemInf}/>
         </main>
         <Folte data={dados.systemInf}/>
+        <p style={{color:"red", fontSize:"10px" , margin:"0px auto"}}><spam>Atenção:</spam> app não adaptado a telas menores de 800px de largura</p>
       </>
       )
     }

@@ -10,6 +10,11 @@ const likeIma= require('../../../public/assets/sotialIcons/iconLinkedin60.svg')
 const GitIma= require('../../../public/assets/sotialIcons/iconGithub60.svg')
 const YouIma=  require('../../../public/assets/sotialIcons/iconYoutube60.svg')
 
+import FileDownloadButton from "./downJson"
+
+const fileUrl = '/dataDashGrafa/dash.zip'; // Substitua pelo URL do seu arquivo
+const fileName = 'dash.zip'; 
+
 import { FolStyle } from "./fotStyle"
 import { useEffect, useState } from "react"
 
@@ -31,7 +36,8 @@ const Folte = ({data})=>{
 
   useEffect(()=>{
     console.log(opinion, userEmail)
-  },[opinion, userEmail])
+    console.log(fileUrl)
+  },[opinion, userEmail, data])
 
   const [escrevaOn, setEscrevaOn]=useState(false)
   const [escreva, setEscreva] = useState('')
@@ -216,9 +222,21 @@ const Folte = ({data})=>{
       return () => {
       observer.unobserve(section);
       };}
+
+      document.getElementById("downloadLink").addEventListener("click", function(event) {
+        event.preventDefault();
+        let link = document.createElement("a");
+        link.href = "../../../public/dataDashGrafa/dash.zip";
+        link.download = "dash.zip"; // Defina o nome do arquivo que será baixado
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
     },[escrevaOn])
   
 //teste
+
+ 
 
     return(
         <FolStyle id='links' className="secao">
@@ -258,6 +276,7 @@ const Folte = ({data})=>{
                 </ul>
                 <ul>
                     <h3>Links Uteis</h3>
+                    <li><a><FileDownloadButton fileUrl={fileUrl} fileName={fileName} /></a></li> 
                     <li><a href={data.eP}>Suas informações, JSON</a></li>
                     <li><a href="https://grafana.com/grafana/download">Baixar grafana</a></li>
                     <li><a href="https://grafana.com/grafana/plugins/marcusolsson-json-datasource/">Grafana Plugin JSON API</a></li>

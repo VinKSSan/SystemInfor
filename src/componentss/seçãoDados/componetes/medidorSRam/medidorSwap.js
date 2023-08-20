@@ -13,8 +13,8 @@ const MediSwap = ({dados}) =>{
             <div>
                 <BarMeterLong value={usedSwap} max={totalSwap}/>
             </div>
-            <p>Total: {usedSwap}</p>
-            <p>Em uso: {totalSwap}</p>
+            <p>Total: {totalSwap}</p>
+            <p>Em uso: {usedSwap}</p>
         </div>
     )
   
