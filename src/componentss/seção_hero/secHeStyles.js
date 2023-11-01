@@ -9,11 +9,7 @@ export const SecHer  = styled('section', {
     backgroundImage: `url(${BackData})`,
     zIndex:10,
     borderBottom:"solid 2px lime",
-    ".pzinho":{
-        paddingTop:"2rem", 
-        borderTop:"solid 1px cyan"
-        
-    },
+   
     ".infor":{
         backgroundColor:"rgba(0, 0 , 0 , 0.8)",
         width:"100%",

@@ -221,17 +221,22 @@ const Folte = ({data})=>{
       // Clean up the observer when the component is unmounted
       return () => {
       observer.unobserve(section);
-      };}
+      };
+    }
 
-      document.getElementById("downloadLink").addEventListener("click", function(event) {
-        event.preventDefault();
-        let link = document.createElement("a");
-        link.href = "../../../public/dataDashGrafa/dash.zip";
-        link.download = "dash.zip"; // Defina o nome do arquivo que será baixado
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      });
+      let linkDown = document.getElementById("downloadLink")
+
+      if(linkDown!==null){
+        linkDown.addEventListener("click", function(event) {
+          event.preventDefault();
+          let link = document.createElement("a");
+          link.href = "../../../public/dataDashGrafa/dash.zip";
+          link.download = "dash.zip"; // Defina o nome do arquivo que será baixado
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      }
     },[escrevaOn])
   
 //teste
