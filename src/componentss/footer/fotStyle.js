@@ -27,6 +27,7 @@ export const FolStyle = styled('footer', {
         padding:"5rem 0rem 0rem 10rem",
         top:0,
         left:0,
+        zIndex:1000,
         ".formu":{
             display:"flex",
             alignItems:"center",

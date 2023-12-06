@@ -7,7 +7,7 @@ const FileDownloadButton = ({ fileUrl, fileName }) => {
     link.download = fileName;
     link.click();
   };
-
+//baixar
   return (
     <button onClick={handleDownload}>
       Baixar grafana Dash

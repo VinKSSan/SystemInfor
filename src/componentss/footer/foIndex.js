@@ -139,11 +139,11 @@ const Folte = ({data})=>{
                     <label>
                         Sua opinião sobre o site
                         <textarea
-                        className="camp"
-                        spellCheck="false" 
-                        onChange={handleTextareaChange}
-                        rows={15}
-                        cols={50}                     
+                          className="camp"
+                          spellCheck="false" 
+                          onChange={handleTextareaChange}
+                          rows={15}
+                          cols={50}                     
                         />
                     </label>
                     <button type="submit">Enviar</button>
@@ -252,39 +252,39 @@ const Folte = ({data})=>{
                     <Image className="LogSys" src={Log} height={50} width={120} alt="logo"></Image>
                 </div>
                 <div className="socialIcons">
-                    <a className="icona" href="#"><Image className="icon" src={faceIma} alt="icone do facebook"></Image></a>
-                    <a className="icona" href="#"><Image className="icon" src={likeIma}   alt="icone Linkedin"></Image></a>
-                    <a className="icona" href="#"><Image className="icon" src={twiIma}    alt="icone Twitter"></Image></a>
-                    <a className="icona" href="#"><Image className="icon" src={GitIma}   alt="icone GitHub"></Image></a>
-                    <a className="icona" href="#"><Image className="icon" src={YouIma}   alt="icone YouTube"></Image></a>
+                    <a className="icona" href="#" target="_blank"><Image className="icon" src={faceIma} alt="icone do facebook"></Image></a>
+                    <a className="icona" href="#" target="_blank"><Image className="icon" src={likeIma}   alt="icone Linkedin"></Image></a>
+                    <a className="icona" href="#" target="_blank"><Image className="icon" src={twiIma}    alt="icone Twitter"></Image></a>
+                    <a className="icona" href="#" target="_blank"><Image className="icon" src={GitIma}   alt="icone GitHub"></Image></a>
+                    <a className="icona" href="#" target="_blank"><Image className="icon" src={YouIma}   alt="icone YouTube"></Image></a>
                 </div>
             </div>
             <div className=" listaLink">
                 <ul>
                     <h3>paginas oficiais</h3>
-                    <li><a href="https://grafana.com/">site oficial grafana</a></li>
-                    <li><a href="https://d3js.org/">site oficial lib D3.js</a></li>
-                    <li><a href="https://systeminformation.io/">site oficial lib SystemInformation</a></li>
+                    <li><a href="https://grafana.com/"target="_blank">site oficial grafana</a></li>
+                    <li><a href="https://d3js.org/" target="_blank">site oficial lib D3.js</a></li>
+                    <li><a href="https://systeminformation.io/" target="_blank">site oficial lib SystemInformation</a></li>
                 </ul>
                 <ul>
                     <h3>projeto System Inform</h3>
                     <li><a href="#">Projeção final</a></li>
-                    <li><a href="#" >Monitoramento de Recursos</a></li>
-                    <li><a href="#" >Repositório GitHub</a></li>
+                    <li><a href="#">Monitoramento de Recursos</a></li>
+                    <li><a href="#">Repositório GitHub</a></li>
                 </ul>
                 <ul>
                     <h3>desenvolvedor</h3>
-                    <li><a href="https://www.linkedin.com/in/vinicius-kalwam-s-santos-88aa27218/">perfil Linkedin</a></li>
-                    <li><a href="#">canal YouTube</a></li>
-                    <li><a href="https://github.com/VinKSSan" >perfil GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/vinicius-kalwam-s-santos-88aa27218/" target="_blank">perfil Linkedin</a></li>
+                    <li><a href="#" target="_blank">canal YouTube</a></li>
+                    <li><a href="https://github.com/VinKSSan" target="_blank" >perfil GitHub</a></li>
                     <li><a href="#" >Vercel_Page VinSan.ed</a></li>
                 </ul>
                 <ul>
                     <h3>Links Uteis</h3>
                     <li><a><FileDownloadButton fileUrl={fileUrl} fileName={fileName} /></a></li> 
-                    <li><a href={data.eP}>Suas informações, JSON</a></li>
-                    <li><a href="https://grafana.com/grafana/download">Baixar grafana</a></li>
-                    <li><a href="https://grafana.com/grafana/plugins/marcusolsson-json-datasource/">Grafana Plugin JSON API</a></li>
+                    <li><a href={data.eP} target="_blank">Suas informações, JSON</a></li>
+                    <li><a href="https://grafana.com/grafana/download" target="_blank">Baixar grafana</a></li>
+                    <li><a href="https://grafana.com/grafana/plugins/marcusolsson-json-datasource/" target="_blank">Grafana Plugin JSON API</a></li>
                 </ul>
             </div>
             <div className="fim">
